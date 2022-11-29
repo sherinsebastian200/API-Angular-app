@@ -6,17 +6,18 @@
                 <thead>
                     <tr>
                         <th scope="col">Name</th>
-                        <th scope="col">Trips</th>
+                        <th scope="col">Total Trips</th>
                         <th scope="col">Airline</th>
-                        <th scope="col">Country</th>
+                        <th scope="col">Airline country</th>
+                       
                     </tr>
                 </thead>
                 <tbody>
                     <tr *ngFor="let i of view.data">
-                        <td>{{i.name}}</td>
+                        <th>{{i.name}}</th>
                         <td>{{i.trips}}</td>
-                        <td>{{i.airline.name}}</td>
-                        <td>{{i.airline.country}}</td>
+                        <td>{{i.airline[0].name}}</td>
+                        <td>{{i.airline[0].country}}</td>
                     </tr>
                 </tbody>
 
