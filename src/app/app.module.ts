@@ -12,6 +12,7 @@ import { ProductListComponent } from './product-list/product-list.component';
 import { UserDataComponent } from './user-data/user-data.component';
 import { TodoComponent } from './todo/todo.component';
 import { QuotesAppComponent } from './quotes-app/quotes-app.component';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
 
 const myRoute:Routes=[
   {
@@ -55,7 +56,8 @@ const myRoute:Routes=[
     ProductListComponent,
     UserDataComponent,
     TodoComponent,
-    QuotesAppComponent
+    QuotesAppComponent,
+    NavBarComponent
   ],
   imports: [
     BrowserModule,
