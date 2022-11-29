@@ -10,6 +10,7 @@ import { PublicApiComponent } from './public-api/public-api.component';
 import { UserInfoComponent } from './user-info/user-info.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { UserDataComponent } from './user-data/user-data.component';
+import { TodoComponent } from './todo/todo.component';
 
 const myRoute:Routes=[
   {
@@ -32,6 +33,10 @@ const myRoute:Routes=[
   {
     path:"userdata",
     component:UserDataComponent
+  },
+  {
+    path:"todo",
+    component:TodoComponent
   }
 ]
 
@@ -43,7 +48,8 @@ const myRoute:Routes=[
     PublicApiComponent,
     UserInfoComponent,
     ProductListComponent,
-    UserDataComponent
+    UserDataComponent,
+    TodoComponent
   ],
   imports: [
     BrowserModule,
